@@ -1,0 +1,53 @@
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: repeat(9, 5vh);
+  grid-template-columns: 5% 30% 30% 30% 5%;
+  background-color: var(--white);
+  border-radius: 7px;
+  padding-top: 2vh;
+}
+
+.card:hover h2 a,
+.card:focus-within h2 a {
+  color: var(--orange);
+}
+
+@media all and (min-width: 1024px) {
+  .card {
+    display: grid;
+    grid-template-rows: repeat(3, 33%);
+    grid-template-columns: 1fr 3% repeat(3, 1fr) 5% 5%;
+    background-color: transparent;
+    flex-flow: row nowrap;
+    max-height: 107px;
+    padding: 0 40px;
+  }
+
+  .card>* {
+    flex: 0 0;
+  }
+
+  .card>*+* {
+    padding: 0;
+  }
+}
+
+@media all and (min-width: 1540px) {
+  .card {
+    padding: 20px 60px;
+    max-height: 147px;
+    cursor: pointer;
+  }
+
+  .card:hover,
+  .card:focus-within {
+    outline: 1px solid var(--grey-demi-dark);
+  }
+}

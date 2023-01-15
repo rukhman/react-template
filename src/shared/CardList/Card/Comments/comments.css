@@ -1,0 +1,20 @@
+.comments_img {
+  margin-bottom: -4px;
+  margin-right: 10px;
+}
+
+.comments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row-start: 9;
+  grid-row-end: 10;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+@media all and (min-width: 1024px) {
+  .comments {
+    display: none;
+  }
+}

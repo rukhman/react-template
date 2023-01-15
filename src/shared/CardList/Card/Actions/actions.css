@@ -1,0 +1,54 @@
+.actions {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	grid-row-start: 9;
+	grid-row-end: 10;
+	grid-column-start: 4;
+	grid-column-end: 5;
+}
+
+.actions>*:not(:last-child) {
+	margin-right: 10px;
+}
+
+.visible_1024 {
+	display: none;
+}
+
+@media all and (min-width: 1024px) {
+	.actions {
+		grid-row-start: 3;
+		grid-row-end: 4;
+		grid-column-start: 3;
+		grid-column-end: 5;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	.visible_1024 {
+		display: inline;
+	}
+
+	.actions_button {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	.actions_button>svg {
+		margin-right: 5px;
+	}
+
+	.actions_button>svg>circle {
+		fill: white;
+	}
+
+	.actions_button>svg>path {
+		fill: #C4C4C4;
+	}
+
+	.actions_button>span {
+		color: var(--grey99);
+	}
+}

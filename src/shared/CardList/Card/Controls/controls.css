@@ -1,0 +1,21 @@
+.controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions > *:not(:last-child) {
+  margin-right: 1vw;
+}
+
+.comments_img {
+  margin-bottom: -4px;
+}
+
+@media all and (min-width: 1024px) {
+  .controls {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+}
